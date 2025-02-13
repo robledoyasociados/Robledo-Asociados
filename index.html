@@ -51,21 +51,24 @@
             bottom: 0;
         }
         .socios {
-            display: flex;
-            justify-content: space-around;
             margin-top: 20px;
         }
         .socio {
-            width: 45%;
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; /* Espacio entre los socios */
+            max-width: 400px; /* Ancho máximo para que no ocupe toda la pantalla */
+            margin-left: auto;
+            margin-right: auto;
         }
         .socio img {
-            max-width: 100%;
+            max-width: 100%; /* La imagen no será más ancha que su contenedor */
             border-radius: 10px;
             margin-top: 15px;
+            width: 200px; /* Tamaño fijo para las fotos */
+            height: auto; /* Mantiene la proporción de la imagen */
         }
         .redes-sociales {
             margin-top: 40px;
@@ -94,13 +97,8 @@
             h1 {
                 font-size: 24px;
             }
-            .socios {
-                flex-direction: column;
-                align-items: center;
-            }
             .socio {
-                width: 90%;
-                margin-bottom: 20px;
+                width: 90%; /* Ocupa más espacio en móviles */
             }
             .redes-sociales a {
                 font-size: 1.5rem;
