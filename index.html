@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robledo & Asociados - Firma de abogados especializada en derecho civil, laboral, penal, empresarial, corporativo y de familia. Más de 5 años de experiencia defendiendo tus derechos.">
+    <meta name="keywords" content="abogados, firma de abogados, derecho civil, derecho laboral, derecho penal, derecho empresarial, derecho corporativo, derecho de familia, Robledo & Asociados">
     <title>Robledo & Asociados - Firma de Abogados</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Enlace a Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,18 +50,76 @@
             width: 100%;
             bottom: 0;
         }
+        .socios {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .socio {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .socio img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .redes-sociales {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .redes-sociales h3 {
+            margin-bottom: 20px;
+        }
+        .redes-sociales a {
+            margin: 0 15px;
+            font-size: 2rem;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .redes-sociales a:hover {
+            color: #0077b5; /* Cambia el color al pasar el mouse */
+        }
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 100px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .socios {
+                flex-direction: column;
+                align-items: center;
+            }
+            .socio {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            .redes-sociales a {
+                font-size: 1.5rem;
+                margin: 0 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="logo.jpg" alt="Robledo & Asociados Logo" class="logo">
-        <h1>Robledo & Asociados</h1>
+        <h1>Robledo & Asociados - Firma de Abogados Expertos</h1>
     </header>
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
+        <a href="#redes">Redes Sociales</a>
     </nav>
     <div class="content">
         <h2 id="inicio">Bienvenidos a Robledo & Asociados</h2>
@@ -66,14 +129,47 @@
             <li>Derecho Civil</li>
             <li>Derecho Laboral</li>
             <li>Derecho Penal</li>
-            <li>Derecho Corporativo</li>
+            <li>Empresarial y Corporativo (Comercial)</li>
+            <li>Derecho de Familia</li>
         </ul>
         <h3 id="nosotros">Sobre Nosotros</h3>
-        <p>Con más de 20 años de experiencia, nuestro equipo de abogados está listo para ayudarte en cualquier situación legal.</p>
+        <p>Con más de 5 años de experiencia, nuestro equipo de abogados está listo para ayudarte en cualquier situación legal.</p>
+        
+        <!-- Sección de Socios -->
+        <div class="socios">
+            <!-- Socio 1: Alejandro Robledo Bohórquez -->
+            <div class="socio">
+                <h4>Socio Gerente y Fundador</h4>
+                <p><strong>Alejandro Robledo Bohórquez</strong></p>
+                <img src="alejandro.jpg" alt="Foto de Alejandro Robledo Bohórquez">
+            </div>
+
+            <!-- Socio 2: Juan Felipe Cruz Betancourt -->
+            <div class="socio">
+                <h4>Socio</h4>
+                <p><strong>Juan Felipe Cruz Betancourt</strong></p>
+                <img src="juan-felipe.jpg" alt="Foto de Juan Felipe Cruz Betancourt">
+            </div>
+        </div>
+
+        <!-- Sección de Redes Sociales -->
+        <div class="redes-sociales" id="redes">
+            <h3>Síguenos en Nuestras Redes Sociales</h3>
+            <a href="https://www.instagram.com/robledoyasociadoss" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@robledoyasociados" target="_blank" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com/RobledoYAsociados" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+
         <h3 id="contacto">Contacto</h3>
         <p>Para más información, no dudes en contactarnos:</p>
-        <p>Email: info@robledoasociados.com</p>
-        <p>Teléfono: +123 456 7890</p>
+        <p>Email: alejandrorobledobohorquez@gmail.com</p>
+        <p>Teléfono: +57 314 7834 866</p>
     </div>
     <footer>
         <p>&copy; 2023 Robledo & Asociados. Todos los derechos reservados.</p>
